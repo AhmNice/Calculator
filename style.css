@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: league;
+    color: hsl(0, 0%, 100%);
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+span{
+    cursor: pointer;
+}
+@font-face {
+    font-family: league;
+    src: url(League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+.themeName, .themesList, .name, .list>span{
+    font-size: 15px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 445px;
+    align-items: center;
+}
+.list{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.theme-1{
+    background-color:hsl(222, 26%, 31%) ;
+    height: 100vh;
+    width: 100%;
+}
+.theme-1 .screen{
+    background-color: hsl(224, 36%, 15%);
+}
+.theme-1 .keypad{
+    background-color:hsl(223, 31%, 20%) ;
+}
+.theme-1 .key{
+    background-color:  hsl(30, 25%, 89%) ;
+    box-shadow:0px 3px  hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+}
+.theme-1 .reset{
+    background-color:hsl(225, 21%, 49%) ;
+    box-shadow: 0px 3px  hsl(224, 28%, 35%);
+    color: white;
+}
+.theme-1 .del{
+    color: white;
+    background-color:hsl(225, 21%, 49%) ;
+    box-shadow: 0px 3px  hsl(224, 28%, 35%);
+}
+.theme-1 .equel{
+    background-color:hsl(6, 63%, 50%) ;
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+    color: white;
+}
+
+
+/* theme 2 */
+.theme-2 .screen{
+    background-color:hsl(0, 0%, 93%);
+    color:  hsl(60, 10%, 19%);
+}
+.theme-2 .keypad{
+    background-color:hsl(0, 5%, 81%) ;
+}
+.theme-2{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(205, 7%, 68%);
+}
+.theme-2 .key{
+    background-color:hsl(45, 7%, 89%) ;
+    box-shadow:0px 3px hsl(35, 11%, 61%);
+    color:  hsl(60, 10%, 19%);
+}
+.theme-2 .reset{
+    background-color:hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+    color: white;
+}
+.theme-2 .del{
+    color: white;
+    background-color:hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+}
+.theme-2 .equel{
+    background-color: hsl(25, 98%, 40%) ;
+    box-shadow: 0px 3px  hsl(25, 99%, 27%);
+    color: white;
+}
+/* theme-2 end */
+/* theme-3 state */
+
+.theme-3 .screen{
+    background-color:hsl(268, 71%, 12%);
+    color:  hsl(52, 100%, 62%);
+}
+.theme-3 .keypad{
+    background-color:hsl(268, 71%, 12%) ;
+}
+.theme-3{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(268, 75%, 9%);
+}
+.theme-3 .key{
+    background-color:hsl(268, 47%, 21%);
+    box-shadow:0px 3px hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+.theme-3 .reset{
+    background-color:hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+    color: hsl(52, 100%, 62%);
+}
+.theme-3 .del{
+    color: hsl(52, 100%, 62%);
+    background-color:hsl(185, 42%, 37%) ;
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+}
+.theme-3 .equel{
+    background-color: hsl(25, 98%, 40%) ;
+    box-shadow: 0px 3px  hsl(25, 99%, 27%);
+    color: hsl(52, 100%, 62%);
+}
+
+/* theme-3 end */
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color:hsl(222, 26%, 31%) ; */
+}
+.screen{
+    width: 450px;
+    padding: 20px;
+    height: 70px;
+    color:hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    border: none;
+}
+.keypad{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 20px;
+    width: 450px;
+    padding: 20px;
+    border-radius:10px ;
+}
+.key{
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+.span{
+   grid-column: span 2;
+}
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: ; */
+    transition: .200ms;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: hsl(6, 63%, 50%);
+    transition: .200ms;
+    border-radius: 50%;
+}
+
+.state-1 .slider {
+    background-color: hsl(224, 36%, 15%);
+}
+
+.state-1 .slider:before {
+    transform: translateX(0);
+    background-color: hsl(6, 63%, 50%);
+    box-shadow:0px 0px 6px hsl(224, 28%, 35%) ;
+}
+
+.state-2 .slider {
+    background-color:hsl(0, 5%, 81%);
+}
+
+.state-2 .slider:before {
+    transform: translateX(30px);
+    background-color:hsl(25, 98%, 40%);
+    /* box-shadow:0px 0px 6px  hsl(25, 99%, 27%) ; */
+}
+
+.state-3 .slider {
+    background-color:  hsl(268, 71%, 12%);
+   
+}
+
+.state-3 .slider:before {
+    transform: translateX(60px);
+    background-color:hsl(176, 100%, 44%);
+}
+@media only screen and (max-width:856px){
+    .screen, .keypad, .header{
+        width: 350px;
+    }
+    .container{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:356px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: league;
+        color: hsl(0, 0%, 100%);
+        font-size: 22px;
+        font-weight: 600;
+        
+    }
+    .screen, .keypad, .header{
+        width: 300px;
+    }
+    .container{
+        padding: 20px;
+        gap: 5px;
+    }
+    .key{
+        padding: 10px;
+    }
+    .themesList{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+}
