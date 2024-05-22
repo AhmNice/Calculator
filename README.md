@@ -62,7 +62,7 @@ toggleSwitch.addEventListener('click', () => {
 ## Author
 
 - Website - [Musa Muhammed Awwal](https://www.your-site.com)
-- Frontend Mentor - [@ahm_nice](https://www.frontendmentor.io/profile/ahm_nice)
+- Frontend Mentor - [@ahm_nice](https://www.frontendmentor.io/profile/AhmNice)
 - Twitter - [@ahm_nice](https://www.twitter.com/ahm_nice)
 
 *
